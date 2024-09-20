@@ -1,0 +1,6 @@
+行人提取的视频/
+PETA dataset/
+*.zip
+*.pt
+*.mp4
+*.partial
