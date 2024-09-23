@@ -4,3 +4,4 @@ PETA dataset/
 *.pt
 *.mp4
 *.partial
+*.pth
