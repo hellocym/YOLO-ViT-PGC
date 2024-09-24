@@ -1,7 +1,9 @@
 行人提取的视频/
 PETA dataset/
+七*/
 *.zip
 *.pt
 *.mp4
 *.partial
 *.pth
+*.rar
