@@ -7,4 +7,6 @@ PETA dataset/
 *.partial
 *.pth
 *.rar
-.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.pkl
