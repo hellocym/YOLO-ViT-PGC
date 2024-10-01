@@ -15,8 +15,12 @@ from tqdm import tqdm
 
 cam1_path = '/hy-tmp/七贤岭/417290'
 cam2_path = '/hy-tmp/七贤岭/417334'
-vid_name = os.listdir(cam1_path)[0]
+cam1_size = len(os.listdir(cam1_path))
+vid_name = os.listdir(cam1_path)[cam1_size // 2]
 path = os.path.join(cam1_path, vid_name)
+
+print(path)
+exit()
 
 #loading a YOLO model from disk
 model = YOLO('/root/yolov8x.pt')
@@ -67,9 +71,7 @@ if scale_percent != 100:
 
 
 results = model.track(path, classes=0, persist=True)
-import pickle
-with open(f'results_{vid_name[:-4]}.pkl', 'wb') as f:
-    pickle.dump(results, f)
+
 
 # for r in results:
 #     frame = r.plot()
